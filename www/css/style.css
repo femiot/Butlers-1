@@ -1,0 +1,160 @@
+a {
+text-decoration: none;
+}
+
+.bar {
+right: 0;
+left: 0;
+z-index: 9;
+box-sizing: border-box;
+padding: 5px;
+width: 100%;
+height: 60px;
+border-width: 0;
+border-style: solid;
+border-top: 1px solid transparent;
+border-bottom: 1px solid #ddd;
+background-color: white;
+/* border-width: 1px will actually create 2 device pixels on retina; */
+background-size: 0;
+}
+
+.bar .title {
+height: 60px;
+line-height: 60px;
+}
+
+.bar .button {
+padding: 8px 8px;
+}
+
+ion-header-bar.bar-stable.bar.bar-header.disable-user-behavior {
+background-color: #e21836;
+background-image: url('../img/logo.png');
+background-position: right 0;
+background-size: 53px;
+background-repeat: no-repeat;
+}
+
+.has-header {
+top: 60px;
+}
+
+.bar.bar-stable .title {
+color: #fff;
+text-transform: uppercase;
+}
+
+.bar-stable .button.button-clear {
+color: #fff;
+}
+
+.menu .scroll-content {
+background-color: #000;
+}
+
+.menu .item-complex .item-content, .item-radio .item-content {
+position: relative;
+z-index: 2;
+padding: 16px 49px 16px 16px;
+border: none;
+background-color: black;
+color:#fff;
+}
+
+.menu .item {
+border-color:#fff;
+}
+
+.menu i.icon {
+float:right;
+}
+
+.bar .button.back-button {
+margin-right: 5px;
+padding: 8px 0;
+}
+
+.menu .bar .button {
+min-height: 50px;
+}
+
+.paymentHistory i.icon {
+font-size:20px;
+float:right;
+color: green;
+}
+
+span.item-note.ng-binding {
+opacity: 1;
+}
+
+a.validation,
+.validation span {
+background-color:#ff0000;
+color:#fff;
+opacity: 0.3;
+}
+
+a.validation i.icon {
+text-indent: -999999px;
+background-image: transparent url('../img/failed.png');
+}
+
+.locations span:first-child {
+font-size:20px;
+}
+
+.locations span {
+width: 100%;
+float: left;
+font-size:15px;
+}
+
+/*Map Testing*/
+#map_canvas { 
+	width: 500px; height: 500px; 
+	float:left;
+}
+#locs {
+	margin-top: 0px;
+	padding-top: 0px;
+	margin-left: 10px;
+	float:left;
+	height: 500px;
+	overflow-y: scroll;
+}
+.loc {
+	border-style:solid;    
+	border-width:thin; 
+	width: 300px;
+	padding: 5px;  
+	cursor:pointer; 
+	margin-top:0px;
+}
+#form {
+	margin-top: 0px;
+	padding-top: 0px;
+	margin-left: 10px;
+	height: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

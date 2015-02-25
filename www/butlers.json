@@ -1,0 +1,52 @@
+{
+    "User": {
+        "FirstName": "John",
+        "LastName": "Doe",
+		"PaymentDetails": {
+            "CardHolderName": "Sean Connor",
+            "CardNumber": "**** **** **** 1234",
+            "BillingAddress": "123 Test Lane",
+            "City": "Cape Town",
+            "Country": "South Africa",
+            "Zip Code": "1234",
+            "DeliveryAddress": "123 delivery Lane"
+        },
+        "PaymentHistory": [
+                {
+                    "Amount": "R129.99",
+					"Date": "10/10/2015",
+                    "Response": "0"
+                },
+                {
+                    "Amount": "R139.99",
+					"Date": "11/10/2015",
+					"Response": "1"
+                },
+                {
+                    "Amount": "R149.99",
+					"Date": "12/10/2015",
+					"Response": "0"
+                },
+                {
+                    "Amount": "R159.99",
+					"Date": "13/10/2015",
+					"Response": "0"
+                },
+                {
+                    "Amount": "R169.99",
+                    "Date": "14/10/2015",
+                    "Response": "1"
+                },
+                {
+                    "Amount": "R179.99",
+                    "Date": "15/10/2015",
+                    "Response": "0"
+                },
+                {
+                    "Amount": "R189.99",
+                    "Date": "16/10/2015",
+                    "Response": "0"
+                }
+            ]
+    }
+}

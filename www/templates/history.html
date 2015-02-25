@@ -1,0 +1,19 @@
+<ion-view view-title="Payment History">
+  <ion-content class="paymentHistory">
+
+		<div class="list">
+		  <a class="item item-icon-left" href="#" ng-repeat="payment in payments" ng-class="{ validation : payment.ResponseCode >= 1}">
+		    <i class="icon ion-checkmark-circled"></i>
+		    {{payment.Amount}}
+		    <span class="item-note">
+		      {{ payment.Date.slice(0, -13) | date: 'yyyy-MM-dd' }}
+		    </span>
+		  </a>
+		</div>
+
+   <!--  <div ng-repeat="payment in payments">
+        {{ payment.Date.slice(0, -13) | date: 'yyyy-MM-dd' }}
+    </div> -->
+
+  </ion-content>
+</ion-view>
