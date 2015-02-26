@@ -52,29 +52,32 @@ angular.module('starter.controllers', [])
 
 
 //Post Amount Method
-.controller('PayCtrl', function ($scope, $http) {
-    $scope.Response = "Send message";
+.controller('PayCtrl', function($scope, $http) {
+    $scope.Response = "Make Payment";
+    
+    $scope.payment = {
+      Amount : ''
+    };
+
     $scope.save = function () {
         $scope.$broadcast('show-errors-check-validity');
-            $scope.Response = "Sending..."
+            $scope.Response = "Processing..."
             $http({
                 method: "POST",
                 url: "https://butlerspay.dev.fireworkx.com/api/pizza/pay",
                 headers: {
                  'Content-Type': 'application/x-www-form-urlencoded'
                },
-                data: {
-                    'Amount': '=' + $scope.Amount
-                }
-            }).success(function (data) {
-                var response = data.split('\"').join('');
-                $scope.Response = response;
-                $('#userForm')[0].reset();
+                data: '=' + $scope.payment.Amount
+                
+            }).success(function(data) {
+                
+                $scope.Response = data;
+                $scope.payment.Amount = '';
             });
 
     };
 })
-
 
 
 

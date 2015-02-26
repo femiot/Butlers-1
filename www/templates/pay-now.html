@@ -20,20 +20,26 @@
 
 	<div class="row">
 		<div class="col">
+		    
 		    <form id="userForm" name="userForm" novalidate>
-				<div class="form-group" show-errors style="min-height: 68px;">
-					<input type="number" class="form-control" name="Amount" ng-model="Amount" required placeholder="Amount" />
-					<p class="help-block" ng-if="userForm.Amount.$error.required">* Amount is required</p>
-				</div>
+				
+	  			<label class="item item-input" show-errors>
+						<input type="number" class="item item-input" name="Amount" ng-model="payment.Amount" required placeholder="Amount" />
+					</label>
+					<p class="help-block" ng-if="userForm.Amount.$error.required">Amount as calculated by invoice amount + tip</p>
+
 
 				<div class="submit-button" ng-click="save()">
-					<span ng-model="Response">
+					<button class="button button-block button-light" ng-model="Response">
 						{{Response}}
-					</span>
+					</button>
 				</div>
 
 			</form> 
-	    </div>
+
+			<div ngController="PaymentMessage" id="messages" ng-show="message">{{ message }}</div>
+
+	  </div>
 	</div>
 
 
